@@ -2,15 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import Counter from './Counter';
 import Info from './Info';
+import { useState } from 'react';
 
 function App() {
+  const [visible, setVisible] = useState(false);
   return (
-    /*
     <>
       <Counter />
       <Info />
     </>
-    */
+
+    /*
     <div>
       <button
         onClick={() => {
@@ -22,6 +24,7 @@ function App() {
       <hr />
       {visible && <Info />}
     </div>
+    */
   );
 }
 

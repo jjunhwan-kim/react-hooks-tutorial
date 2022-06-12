@@ -3,15 +3,17 @@ import './App.css';
 import Counter from './Counter';
 import Info from './Info';
 import { useState } from 'react';
+import Average from './Average';
 
 function App() {
   const [visible, setVisible] = useState(false);
   return (
+    /*
     <>
       <Counter />
       <Info />
     </>
-
+    */
     /*
     <div>
       <button
@@ -25,6 +27,7 @@ function App() {
       {visible && <Info />}
     </div>
     */
+    <Average />
   );
 }
 

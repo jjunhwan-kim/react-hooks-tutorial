@@ -5,10 +5,23 @@ import Info from './Info';
 
 function App() {
   return (
+    /*
     <>
       <Counter />
       <Info />
     </>
+    */
+    <div>
+      <button
+        onClick={() => {
+          setVisible(!visible);
+        }}
+      >
+        {visible ? '숨기기' : '보이기'}
+      </button>
+      <hr />
+      {visible && <Info />}
+    </div>
   );
 }
 
